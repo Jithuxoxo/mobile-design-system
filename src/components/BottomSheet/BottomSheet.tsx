@@ -77,7 +77,7 @@ export function BottomSheetListItem({
     <div className="flex items-center gap-space-3 py-[10px]">
       <Avatar size={32} name={name} src={avatarSrc} />
       <div className="flex-1 min-w-0">
-        <p className="text-label-md font-semibold text-base-900 truncate">{name}</p>
+        <p className="text-[14px] font-semibold text-base-900 truncate">{name}</p>
         <p className="text-body-sm text-base-700 truncate">{subtitle}</p>
       </div>
       {trailing && <span className="shrink-0">{trailing}</span>}
