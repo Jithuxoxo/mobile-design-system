@@ -25,8 +25,7 @@ export function BottomSheet({
 }: BottomSheetProps) {
   return (
     <div
-      className={`bg-base-000 rounded-t-2xl px-space-5 pt-space-5 pb-space-8 w-full font-sans
-        shadow-[0px_-4px_8px_0px_rgba(104,108,157,0.16)] ${className}`}
+      className={`bg-base-000 rounded-t-[16px] px-space-5 pt-space-5 pb-space-8 w-full font-sans shadow-[0px_-4px_8px_0px_rgba(104,108,157,0.16)] ${className}`}
     >
       {/* Drag handle */}
       <div className="flex justify-center mb-space-5">

@@ -394,7 +394,7 @@ export const AllVariants: StoryObj = {
     <div className="flex flex-wrap gap-space-6 items-start justify-center font-sans">
 
       {/* Nominee Details */}
-      <div className="w-[375px] shadow-elevation-2 rounded-t-2xl overflow-hidden">
+      <div className="w-[375px] shadow-elevation-2 rounded-t-[16px] overflow-hidden">
         <BottomSheet title="Nominee details" onDismiss={fn()}>
           <div className="flex flex-col divide-y divide-base-200">
             {NOMINEES.map(n => (
@@ -405,7 +405,7 @@ export const AllVariants: StoryObj = {
       </div>
 
       {/* Action Menu */}
-      <div className="w-[375px] shadow-elevation-2 rounded-t-2xl overflow-hidden">
+      <div className="w-[375px] shadow-elevation-2 rounded-t-[16px] overflow-hidden">
         <BottomSheet title="Settings" onDismiss={fn()}>
           <div className="flex flex-col gap-space-1">
             <BottomSheetActionItem
@@ -426,7 +426,7 @@ export const AllVariants: StoryObj = {
       </div>
 
       {/* Language Settings */}
-      <div className="w-[375px] shadow-elevation-2 rounded-t-2xl overflow-hidden">
+      <div className="w-[375px] shadow-elevation-2 rounded-t-[16px] overflow-hidden">
         <BottomSheet
           title="Language settings"
           description="Beta disclaimer: This feature is still under the beta version. The language setting does not cover user generated content."
