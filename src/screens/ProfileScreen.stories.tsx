@@ -217,7 +217,7 @@ function ProfileScreenView({
           </div>
         </div>
 
-        {/* Menu card */}
+        {/* Menu + Account — single card */}
         <div className="bg-base-000 rounded-md overflow-hidden divide-y divide-base-300/80">
           <Row icon={<HugeiconsIcon icon={UserMultipleIcon} size={18} color="currentColor" strokeWidth={1.5} />} label="Socials" />
           <Row icon={<HugeiconsIcon icon={Award01Icon}       size={18} color="currentColor" strokeWidth={1.5} />} label="Recognitions" />
@@ -225,10 +225,6 @@ function ProfileScreenView({
           <Row icon={<HugeiconsIcon icon={FavouriteIcon}     size={18} color="currentColor" strokeWidth={1.5} />} label="Benefits" />
           <Row icon={<HugeiconsIcon icon={GiftIcon}          size={18} color="currentColor" strokeWidth={1.5} />} label="Gift" />
           <Row icon={<HugeiconsIcon icon={Analytics01Icon}   size={18} color="currentColor" strokeWidth={1.5} />} label="Reports & Admin" />
-        </div>
-
-        {/* Account card */}
-        <div className="bg-base-000 rounded-md overflow-hidden divide-y divide-base-300/80">
           <Row
             icon={<HugeiconsIcon icon={ShoppingBag01Icon} size={18} color="currentColor" strokeWidth={1.5} />}
             label="Order History"
@@ -433,13 +429,12 @@ export const MenuSection: StoryObj = {
     layout: 'centered',
     docs: {
       description: {
-        story: 'Menu card (6 items) and Account card (4 items) with the Order History badge.',
+        story: 'All 10 items — Socials, Recognitions, Surveys, Benefits, Gift, Reports & Admin, Order History, Account Statement, Settings, Support — in a single card divided by hairlines.',
       },
     },
   },
   render: () => (
-    <div className="flex flex-col gap-[10px] w-[375px] font-sans" style={{ background: '#F5F5F4', padding: 16 }}>
-      {/* Menu */}
+    <div className="w-[375px] font-sans" style={{ background: '#F5F5F4', padding: 16 }}>
       <div className="bg-base-000 rounded-md overflow-hidden divide-y divide-base-300/80">
         <Row icon={<HugeiconsIcon icon={UserMultipleIcon} size={18} color="currentColor" strokeWidth={1.5} />} label="Socials" />
         <Row icon={<HugeiconsIcon icon={Award01Icon}       size={18} color="currentColor" strokeWidth={1.5} />} label="Recognitions" />
@@ -447,9 +442,6 @@ export const MenuSection: StoryObj = {
         <Row icon={<HugeiconsIcon icon={FavouriteIcon}     size={18} color="currentColor" strokeWidth={1.5} />} label="Benefits" />
         <Row icon={<HugeiconsIcon icon={GiftIcon}          size={18} color="currentColor" strokeWidth={1.5} />} label="Gift" />
         <Row icon={<HugeiconsIcon icon={Analytics01Icon}   size={18} color="currentColor" strokeWidth={1.5} />} label="Reports & Admin" />
-      </div>
-      {/* Account */}
-      <div className="bg-base-000 rounded-md overflow-hidden divide-y divide-base-300/80">
         <Row
           icon={<HugeiconsIcon icon={ShoppingBag01Icon} size={18} color="currentColor" strokeWidth={1.5} />}
           label="Order History"
